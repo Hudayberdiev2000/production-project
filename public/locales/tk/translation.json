@@ -1,5 +1,8 @@
 {
   "hello": "salam",
   "translation": "Turkmence",
-  "mainPage": "Esasy Sahypa"
+  "mainPage": "Esasy Sahypa",
+  "page-not-found": "Sizin gozleyan sahypanyz tapylmady!",
+  "Something went wrong": "Something went wrong",
+  "Refresh page": "Refresh page"
 }
