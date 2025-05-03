@@ -15,9 +15,7 @@ export default function ThemeProvider({
 }) {
   const [theme, setTheme] = useState<Theme>(defaultTheme)
 
-  const toggleTheme = () => {
-    setTheme(theme === Theme.DARK ? Theme.LIGHT : Theme.DARK)
-  }
+
   return (
     <ThemeContext.Provider
       value={{
