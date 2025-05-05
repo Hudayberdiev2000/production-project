@@ -16,7 +16,15 @@
   },
   "ts-node": {
     "compilerOptions": {
-      "module": "CommonJS"
+      "moduleResolution": "bundler",        // ✅ or "node16" or "nodenext"
+//      "module": "ESNext",                   // ✅ required for bundler/nodenext
+      "target": "ES2020",
+      "module": "CommonJS",
+      "types": ["jest", "@testing-library/jest-dom"]
     }
-  }
+  },
+  "include": [
+    "src", "types.d.ts",
+    "./config/jest/setupTests.ts"
+  ]
 }
