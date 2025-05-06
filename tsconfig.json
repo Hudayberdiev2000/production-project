@@ -3,7 +3,7 @@
     "outDir": "./build/",
     "noImplicitAny": true,
     "module": "es2020",
-    "target": "es5",
+    "target": "es2020",
     "jsx": "react-jsx",
     "allowJs": true,
     "baseUrl": ".",
@@ -17,14 +17,15 @@
   "ts-node": {
     "compilerOptions": {
       "moduleResolution": "bundler",        // ✅ or "node16" or "nodenext"
-//      "module": "ESNext",                   // ✅ required for bundler/nodenext
       "target": "ES2020",
       "module": "CommonJS",
       "types": ["jest", "@testing-library/jest-dom"]
     }
   },
   "include": [
-    "src", "types.d.ts",
-    "./config/jest/setupTests.ts"
+    "./config/jest/setupTests.ts",
+    "./src/**/*.tsx",
+    "./src/**/*.ts"
+
   ]
 }
